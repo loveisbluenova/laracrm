@@ -92,4 +92,5 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Projects ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/projects', 'LA\ProjectsController');
 	Route::get(config('laraadmin.adminRoute') . '/project_dt_ajax', 'LA\ProjectsController@dtajax');
+	
 });
